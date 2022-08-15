@@ -11,6 +11,7 @@
     />
 
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
     <link
       rel="icon"
       type="image/png"
@@ -18,136 +19,102 @@
       href="./images/favicon-32x32.png"
     />
 
+    <script defer src="script.js"></script>
     <title>Frontend Mentor | [Challenge Name Here]</title>
   </head>
   <body>
-    <div class="pricing-container">
+    <div class="pricing-background">
       <section class="pricing">
         <div class="pricing__box">
           <h2 class="pricing__heading">Our Pricing</h2>
           <div class="pricing__toggle">
             <p>Annually</p>
+            <div class="pricing__toggle-box">
+              <input type="checkbox" id="switch" class="pricing__checkbox" />
+              <label for="switch" class="pricing__switch"></label>
+            </div>
             <p>Monthly</p>
           </div>
         </div>
-        <div class="card">
-          <div class="card__container">
-            <div class="card__box card__box--front card__box--front-bs">
-              <div class="card__option"><span>Basic</span></div>
-              <div class="card__price-box">
-                <div class="card__currency">
-                  <span>&dollar;</span>
-                </div>
-                <div class="card__price-total">19.99</div>
-              </div>
-              <ul class="card__features-list">
-                <li>500 GB Storage</li>
-                <li>2 Users Allowed</li>
-                <li>Send up to 3 GB</li>
-              </ul>
-              <div class="btn">
-                <a href="#" class="btn__learn-more">Learn More</a>
-              </div>
-            </div>
 
-            <div class="card__box card__box--back card__box--back-bs">
-              <div class="card__option"><span>Basic</span></div>
-              <div class="card__price-box">
-                <div class="card__currency">
-                  <span>&dollar;</span>
-                </div>
-                <div class="card__price-total">199.99</div>
+        <div class="cards">
+          <div class="card card--border-rd-bs card--margin-left">
+            <div class="card__option"><span>Basic</span></div>
+            <div class="card__price-box-monthly card__price-box card__active">
+              <div class="card__currency">
+                <span>&dollar;</span>
               </div>
-              <ul class="card__features-list">
-                <li>500 GB Storage</li>
-                <li>2 Users Allowed</li>
-                <li>Send up to 3 GB</li>
-              </ul>
-              <div class="btn">
-                <a href="#" class="btn__learn-more">Learn More</a>
+              <div class="card__price-total-monthly">19.99</div>
+            </div>
+            <div class="card__price-box-annually card__price-box">
+              <div class="card__currency">
+                <span>&dollar;</span>
               </div>
+              <div class="card__price-total-annually">199.99</div>
+            </div>
+            <ul class="card__features-list">
+              <li>500 GB Storage</li>
+              <li>2 Users Allowed</li>
+              <li>Send up to 3 GB</li>
+            </ul>
+            <div class="btn">
+              <a href="#" class="btn__learn-more">Learn More</a>
             </div>
           </div>
 
-          <div class="card__container card__container--pr">
-            <div class="card__box card__box--front card__box--front-prof">
-              <div class="card__option card__option--pr">
-                <span>Professional</span>
+          <div class="card card--pr">
+            <div class="card__option card__option--pr">
+              <span>Professional</span>
+            </div>
+            <div class="card__price-box-monthly card__price-box card__active">
+              <div class="card__currency card__currency--pr">
+                <span>&dollar;</span>
               </div>
-              <div class="card__price-box">
-                <div class="card__currency card__currency--pr">
-                  <span>&dollar;</span>
-                </div>
-                <div class="card__price-total card__price-total--pr">24.99</div>
-              </div>
-              <ul class="card__features-list card__features-list--pr">
-                <li>1 TB Storage</li>
-                <li>5 Users Allowed</li>
-                <li>Send up to 10 GB</li>
-              </ul>
-              <div class="btn">
-                <a href="#" class="btn__learn-more btn__learn-more-pr"
-                  >Learn More</a
-                >
+              <div class="card__price-total-monthly card__price-total-pr">
+                24.99
               </div>
             </div>
-
-            <div class="card__box card__box--back card__box--back-prof">
-              <div class="card__option"><span>Professional</span></div>
-              <div class="card__price-box">
-                <div class="card__currency">
-                  <span>&dollar;</span>
-                </div>
-                <div class="card__price-total">249.99</div>
+            <div class="card__price-box-annually card__price-box">
+              <div class="card__currency card__currency--pr">
+                <span>&dollar;</span>
               </div>
-              <ul class="card__features-list">
-                <li>1 TB Storage</li>
-                <li>5 Users Allowed</li>
-                <li>Send up to 10 GB</li>
-              </ul>
-              <div class="btn">
-                <a href="#" class="btn__learn-more btn__learn-more-pr"
-                  >Learn More</a
-                >
+              <div class="card__price-total-annually card__price-total-pr">
+                249.99
               </div>
+            </div>
+            <ul class="card__features-list card__features-list--pr">
+              <li>1 TB Storage</li>
+              <li>5 Users Allowed</li>
+              <li>Send up to 10 GB</li>
+            </ul>
+            <div class="btn">
+              <a href="#" class="btn__learn-more btn__learn-more--pr"
+                >Learn More</a
+              >
             </div>
           </div>
 
-          <div class="card__container">
-            <div class="card__box card__box--front card__box--front-ms">
-              <div class="card__option"><span>Master</span></div>
-              <div class="card__price-box">
-                <div class="card__currency">
-                  <span>&dollar;</span>
-                </div>
-                <div class="card__price-total">39.99</div>
+          <div class="card card--border-rd-ms card--margin-right">
+            <div class="card__option"><span>Master</span></div>
+            <div class="card__price-box-monthly card__price-box card__active">
+              <div class="card__currency">
+                <span>&dollar;</span>
               </div>
-              <ul class="card__features-list">
-                <li>2 TB Storage</li>
-                <li>10 Users Allowed</li>
-                <li>Send up to 20 GB</li>
-              </ul>
-              <div class="btn">
-                <a href="#" class="btn__learn-more">Learn More</a>
-              </div>
+              <div class="card__price-total-monthly">39.99</div>
             </div>
-
-            <div class="card__box card__box--back card__box--back-ms">
-              <div class="card__option"><span>Master</span></div>
-              <div class="card__price-box">
-                <div class="card__currency">
-                  <span>&dollar;</span>
-                </div>
-                <div class="card__price-total">399.99</div>
+            <div class="card__price-box-annually card__price-box">
+              <div class="card__currency">
+                <span>&dollar;</span>
               </div>
-              <ul class="card__features-list">
-                <li>2 TB Storage</li>
-                <li>10 Users Allowed</li>
-                <li>Send up to 20 GB</li>
-              </ul>
-              <div class="btn">
-                <a href="#" class="btn__learn-more">Learn More</a>
-              </div>
+              <div class="card__price-total-annually">399.99</div>
+            </div>
+            <ul class="card__features-list">
+              <li>2 TB Storage</li>
+              <li>10 Users Allowed</li>
+              <li>Send up to 20 GB</li>
+            </ul>
+            <div class="btn">
+              <a href="#" class="btn__learn-more">Learn More</a>
             </div>
           </div>
         </div>
@@ -168,8 +135,8 @@
             <a
               href="https://www.frontendmentor.io?ref=challenge"
               target="_blank"
-              >Frontend Mentor</a
-            >. Coded by <a href="#">Algirdas Urbonavicius</a>.
+              >Frontend Mentor. </a
+            >Coded by <a href="#">Algirdas Urbonavicius.</a>
           </p>
         </div>
       </footer>

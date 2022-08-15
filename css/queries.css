@@ -1,0 +1,46 @@
+/* 848px */
+@media (max-width: 53em) {
+  .cards {
+    grid-template-columns: minmax(27rem, 50rem);
+    margin: 0 2.6rem 4rem;
+  }
+
+  .card {
+    border-radius: 1rem;
+  }
+
+  .card:not(:last-child) {
+    margin-bottom: 3.6rem;
+  }
+
+  .card--margin-right {
+    margin-right: 0;
+  }
+
+  .card--margin-left {
+    margin-left: 0;
+  }
+
+  .footer__attribution a {
+    display: block;
+    margin-top: 0.4rem;
+    margin-bottom: 2rem;
+  }
+
+  .footer__attribution a:last-child {
+    margin-bottom: 0rem;
+  }
+
+  .footer__attribution a:hover {
+    display: block;
+  }
+
+  .bg-style img:nth-child(1) {
+    display: none;
+  }
+
+  .bg-style img:nth-child(2) {
+    top: 0rem;
+    right: -20rem;
+  }
+}
