@@ -13,7 +13,7 @@ This is a solution to the [Pricing component with toggle challenge on Frontend M
   - [What I learned](#what-i-learned)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
+
 
 ## Overview
 
@@ -118,10 +118,3 @@ To see how you can add code snippets, see below:
 - Website - [Algirdas Urbonavicius](https://github.com/AlgirdasU/Pricing-component-with-toggle)
 - Frontend Mentor - [@AlgirdasU](https://www.frontendmentor.io/profile/AlgirdasU)
 - Twitter - [@AlgirdasDdd](https://twitter.com/algirdasddd)
-
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
